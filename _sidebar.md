@@ -6,3 +6,4 @@
 
   - [Initial Setup](connectors/initialSetup.md)
   - [Freshdesk Configuration](connectors/freshdesk.md)
+  - [Survey Configuration](connectors/survey.md)

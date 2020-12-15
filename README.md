@@ -11,5 +11,5 @@ A customized platform to manage omnichannel cloud contact center ' Amazon Connec
 
 - CRM Integrations
 - Block Numbers
-- Surveys (through IVR )
+- Surveys (through IVR)
 - Remainders
