@@ -4,7 +4,7 @@
 
 Open the AWS Connect instance setup page and go to `Application integration` tab then whitelist the following domains
 
-> https://ccp.arta.sandeza.io \
+> https://freshdeskccp.arta.sandeza.io \
 > https://d3h0owdjgzys62.cloudfront.net \
 > Your freshdesk URL **eg : https://sandeza-support.freshdesk.com**
 
@@ -14,7 +14,7 @@ Open the AWS Connect instance setup page and go to `Application integration` tab
 
 Select `layers` on the sidemenu and click `Create Layer` button
 
-![create_layer](images/create_layer.png)
+![create_layer](images/create_layerv2.png)
 
 Download the layer files from <a href="https://lambda-layers-1h8d3.s3.ap-south-1.amazonaws.com/freshdesk-integration-layer.zip" target="_blank">S3 link</a>
 
@@ -28,17 +28,17 @@ Create new lambda function with basic execution permission with runtime `Node 12
 
 > Note : Lambda and AWS Connect instance should be in same region
 
-Add layers to lambda by selecting `Layers` under `Designer` tab and click `Add a layer` button as shown below
+Add layers to lambda by selecting `Layers` under `Function Overview` tab and click `Add a layer` button as shown below
 
-![add_layer](images/add_layer.png)
+![add_layer](images/add_layerv2.png)
 
 Select the layer which you have created before and the layer version then click Add button
 
-![select_layer](images/select_layer.png)
+![select_layer](images/select_layerv2.png)
 
 Now the layer was added to lambda as shown below
 
-![layer_added](images/layer_added.png)
+![layer_added](images/layer_addedv2.png)
 
 Add the environment variables as shown in below image
 
@@ -48,9 +48,9 @@ Add the environment variables as shown in below image
 
 ### Whitelist
 
-Open the AWS Connect instance setup page and go to `Contact flows` tab then whitelist the created lambda
+Open the AWS Connect instance setup page and go to `Contact flows` tab and scroll to AWS Lambda and whitelist the created lambda and click the `Add Lambda Function` to add the lambda function with connect instance.
 
-![env_variables](images/lambda_whitelist.png)
+![env_variables](images/lambda_whitelistv2.png)
 
 ## Contact Flow setup
 
