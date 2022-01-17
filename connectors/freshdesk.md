@@ -7,7 +7,7 @@ Arta Connector blends Amazon Connect and Freshdesk in a perfect way so both the 
 ### Features
 
 - Call Logs
-- Contacts with search
+- Contacts with search 
 - Save contact
 - Multilanguage 
 - Caller Indetification through Freshdesk contacts
@@ -27,11 +27,18 @@ Arta Connector blends Amazon Connect and Freshdesk in a perfect way so both the 
 
 ![Free Connector Installation](images/installFreeConnecter.png "Free Connector Installation")
 
-- **Instance Alias** - Enter Amazon Connect Instance Alias name
+- **Instance URL** - Enter Amazon Connect Instance URL 
 
-    ```text
-    eg : sandeza
+   **NOTE**
+     If the domain Name ends with `.awsapps.com` include `/connect` 
+     ```text
+     eg: https://sandeza.awsapps.com/connect
     ```
+    **NOTE**
+     If the domain Name ends with `.my.connect.aws` do not include `/connect` 
+    ```text
+    eg: https://sandeza.my.connect.aws
+     ```
 
 - **Instance Login URL** - Enter Amazon Connect Instance login URL. You can find that in Connect Instances overview page
 
